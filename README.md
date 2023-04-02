@@ -2,10 +2,6 @@
 
 Rubik's Cube Mover is a C# console application that allows the user to programmatically manipulate a Rubik's cube.
 
-## Running the application
-
-Double-click the EXE file to run. A list of commands will be displayed on load (see below list).
-
 ## Commands
 
 Available commands and their meaning:
@@ -24,4 +20,12 @@ Available commands and their meaning:
 L. List all commands onscreen
 Q. Quit the program
 R. Reset the cube to its original state
+
+## Building the application
+
+This application was created in Visual Studio 2022 but will also run in Visual Studio 2019. In your local copy of the repository, double-click RubiksCubeMover.sln to open the solution. The RubiksCubeMover project should be set as the startup project. Then you press F5 to run the project.
+
+## Running the application
+
+You can run the application without needing to run Visual Studio. Open the dist directory in your local copy of the repository and click on the .exe file to run the application.
 
