@@ -5,6 +5,7 @@
     using System.Linq;
 
     using Enums;
+    using Helpers;
     using Interfaces;
     using Models;
 
@@ -59,31 +60,7 @@
 
         private static void WriteColourToConsole(Colour colour)
         {
-            var consoleChar = " ";
-
-            // TODO: Use Enum description instead of hard-coded values
-            switch (colour)
-            {
-                case Colour.Orange:
-                    consoleChar = "O";
-                    break;
-                case Colour.Yellow:
-                    consoleChar = "Y";
-                    break;
-                case Colour.Blue:
-                    consoleChar = "B";
-                    break;
-                case Colour.White:
-                    consoleChar = "W";
-                    break;
-                case Colour.Red:
-                    consoleChar = "R";
-                    break;
-                case Colour.Green:
-                    consoleChar = "G";
-                    break;
-            }
-            
+            var consoleChar = EnumHelper.GetDescription(colour);
             Console.Write($"{consoleChar} ");
             Console.ResetColor();
         }
